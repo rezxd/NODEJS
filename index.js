@@ -1,16 +1,14 @@
-const express = require("express");
+const express = require('express');
 const app = express();
-const port = 8000;
-const apiRouter = require("./api-routes")
+const port = 8080;
 
-app.get("/", (req, res) => {
-    res.send(
-        "hello , selamat anda telah berhasil membuat webserver dengan express"
-    );
+app.get('/', (req, res) => {
+  res.send('Selamat Datang Di Data Center Siswa Indonesia');
 });
 
-app.use("/api", apiRouter);
+const dataSiswaRoute = require('./DataSiswa');
+app.use('/', dataSiswaRoute);
 
 app.listen(port, () => {
-    console.log(`server berjalan di  port ${port}`);
+  console.log(`Server berjalan di ${port}`);
 });

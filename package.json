@@ -1,12 +1,12 @@
 {
-  "name": "resthub",
+  "name": "tugas1",
   "version": "1.0.0",
-  "description": "rest api CRUD",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "niomic",
+  "author": "rizki",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
